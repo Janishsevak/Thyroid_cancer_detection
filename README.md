@@ -35,8 +35,11 @@ The dataset was split into an 80-20 train-test ratio. Models were evaluated on t
 4. Experiment Tracking with DagsHub and MLflow
 •	DagsHub Integration:
 o	The project is versioned on DagsHub, where both the dataset and model artifacts are tracked.
+
 o	The repository URL https://dagshub.com/Janishsevak/Thyroid_cancer_detection
+
 o	MLflow is configured with DagsHub's tracking server to log metrics, parameters, and model artifacts.
+
 •	MLflow Integration:
 o	MLflow is used to track experiments, log model parameters, metrics, and confusion matrices.
 o	Experiment results are accessible via the MLflow UI in DagsHub.
