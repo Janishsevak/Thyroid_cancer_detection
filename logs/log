@@ -1,0 +1,21 @@
+2025-01-19 18:20:57,521 - INFO - Dataset loaded successfully with 383 rows and 17 columns.
+2025-01-19 18:20:57,542 - INFO - Preprocessing completed. Data shape after preprocessing: (383, 41)
+2025-01-19 18:20:57,839 - INFO - Model training completed successfully.
+2025-01-19 18:20:57,850 - INFO - Model saved to artifacts/model.pkl
+2025-01-19 18:20:57,874 - INFO - Confusion Matrix:
+2025-01-19 18:20:57,876 - INFO - 
+[[58  0]
+ [ 1 18]]
+2025-01-19 18:20:57,894 - INFO - Classification Report:
+2025-01-19 18:20:57,896 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99        58
+           1       1.00      0.95      0.97        19
+
+    accuracy                           0.99        77
+   macro avg       0.99      0.97      0.98        77
+weighted avg       0.99      0.99      0.99        77
+
+2025-01-19 18:20:57,903 - INFO - Accuracy Score: 0.99
+Done
