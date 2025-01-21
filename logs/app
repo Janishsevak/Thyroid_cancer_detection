@@ -1,0 +1,49 @@
+2025-01-21 10:56:59,592 - INFO - Dataset loaded successfully with 383 rows and 17 columns.
+2025-01-21 10:56:59,662 - INFO - Preprocessing completed. Data shape after preprocessing: (383, 41)
+2025-01-21 10:57:01,107 - INFO - Model training completed successfully.
+2025-01-21 10:57:01,153 - INFO - Model saved to artifacts/model.pkl
+2025-01-21 10:57:23,928 - INFO - Model saved and logged to DagsHub via MLflow.
+2025-01-21 10:57:24,024 - INFO - Confusion Matrix:
+2025-01-21 10:57:24,024 - INFO - 
+[[58  0]
+ [ 1 18]]
+2025-01-21 10:57:24,090 - INFO - Classification Report:
+2025-01-21 10:57:24,090 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99        58
+           1       1.00      0.95      0.97        19
+
+    accuracy                           0.99        77
+   macro avg       0.99      0.97      0.98        77
+weighted avg       0.99      0.99      0.99        77
+
+2025-01-21 10:57:24,107 - INFO - Accuracy Score: 0.99
+2025-01-21 10:57:25,030 - ERROR - An error occurred in the main workflow.
+Traceback (most recent call last):
+  File "main.py", line 52, in main
+    accuracy = Evaluation.compute_accuracy(predictions, y_test)
+AttributeError: type object 'Evaluation' has no attribute 'compute_accuracy'
+2025-01-21 11:02:18,519 - INFO - Dataset loaded successfully with 383 rows and 17 columns.
+2025-01-21 11:02:18,568 - INFO - Preprocessing completed. Data shape after preprocessing: (383, 41)
+2025-01-21 11:02:20,158 - INFO - Model training completed successfully.
+2025-01-21 11:02:20,166 - INFO - Model saved to artifacts/model.pkl
+2025-01-21 11:02:34,059 - INFO - Model saved and logged to DagsHub via MLflow.
+2025-01-21 11:02:34,100 - INFO - Confusion Matrix:
+2025-01-21 11:02:34,100 - INFO - 
+[[58  0]
+ [ 1 18]]
+2025-01-21 11:02:34,133 - INFO - Classification Report:
+2025-01-21 11:02:34,133 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99        58
+           1       1.00      0.95      0.97        19
+
+    accuracy                           0.99        77
+   macro avg       0.99      0.97      0.98        77
+weighted avg       0.99      0.99      0.99        77
+
+2025-01-21 11:02:34,133 - INFO - Accuracy Score: 0.99
+2025-01-21 11:02:34,165 - INFO - Computed Accuracy: 0.99
+2025-01-21 11:02:34,691 - INFO - Accuracy logged to DagsHub: 0.99

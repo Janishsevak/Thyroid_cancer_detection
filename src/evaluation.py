@@ -35,3 +35,21 @@ class Evaluation:
         except Exception as e:
             logger.exception("An error occurred during model evaluation.")
             raise
+
+    @staticmethod
+    def compute_accuracy(predictions, y_test):
+        """
+        Compute and return the accuracy score.
+
+        Args:
+            predictions: Model predictions.
+            y_test: True target values.
+
+        Returns:
+            Accuracy score as a float.
+        """
+        try:
+            return accuracy_score(y_test, predictions)
+        except Exception as e:
+            logger.exception("An error occurred while computing accuracy.")
+            raise
